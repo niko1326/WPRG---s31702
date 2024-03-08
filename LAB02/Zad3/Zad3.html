@@ -3,62 +3,85 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Form example 2</title>
+    <title>Travel reservation form</title>
 </head>
 
 <body>
-<p1>Travel reservation form</p1>
+<h1>Travel reservation form</h1>
+<h2>* denotes mandotory</h2>
 <div id="main">
     <form action="" method="GET">
-        <ul>
-            <li><label>Favorite color: <input type="text" name="favoriteColor" value="Red" maxlength="50">
-            </label></li>
-            <li><label>Password: <input type="password" name="password" maxlength="12" id="form_password"> </label>
-            </li>
-            <li><label>Comment: <textarea name="comment" rows="4" cols="45"
-                                          placeholder="Leave commenthere">This is a default comment</textarea></label></li>
-            <li><label>Email: <input type="email" name="email" id="form_email"></label></li>
-            <li><label>Telephone: <input type="tel" name="tel"></label></li>
-            <li><label>URL site: <input type="URL" name="url"> </label></li>
-            <li><label>Search: <input type="search" name="search" placeholder="search content"></label></li>
-            <li><label>Education: <input type="text" list="edulevel" name="education"></label></li>
-            <datalist id="edulevel">
-                <option value="High school">
-                <option value="Bachelors degree">
-                <option value="Masters degree">
-            </datalist>
-            <li>Education (radio)</li>
-            <ol>
-                <li><label>High school <input type="radio" name="radio" value="High" checked></label></li>
-                <li><label>Bachelors degree <input type="radio" name="radio" value="Bachelors"></label></li>
-                <li><label>Masters degree <input type="radio" name="radio" value="Master"></label></li>
-            </ol>
-            <li>Languages (checkbox)</li>
-            <ul>
-                <li><label>English: <input type="checkbox" name="languages" value="english"></label></li>
-                <li><label>Polish: <input type="checkbox" name="languages" value="polish"></label></li>
-                <li><label>German: <input type="checkbox" name="languages" value="german"></label></li>
-            </ul>
-            <li><label>Age: <select name="age" size="6" multiple>
-                <option>0-18</option>
-                <option>19-25</option>
-                <option>26-34</option>
-                <option>35+</option>
-            </select></label></li>
-            <li><label>Ice creams: <select name="ice" size="7" multiple>
-                <optgroup label="traditional">
-                    <option selected>Vanilla</option>
-                    <option>Chocolate</option>
-                </optgroup>
-                <optgroup label="fancy">
-                    <option>Super praline</option>
-                    <option>Nut suprise</option>
-                    <option>Candy corn</option>
-                </optgroup>
-            </select> </label></li>
-            <li><input type="submit" value="Send"></li>
-            <li><input type="reset"></li>
-        </ul>
+        <label>
+            Full name*:<br>
+            <input type="text" name="name" placeholder="FirstName LastName">
+            <br>
+        </label>
+        <label>
+            Email address*:<br>
+            <input type="email" name="email" id="form_email">
+            <br>
+        </label>
+        <label>
+            Select Tour Package*:<br>
+            <input type="text" list="tour_package" name="tourPackage">
+            <br>
+        </label>
+        <datalist id="tour_package">
+            <option value="Goa">
+            <option value="Moa">
+            <option value="Boa">
+        </datalist>
+        <label>
+            Arrival date*:<br>
+            <input type="date" name="arrival_date" placeholder="m/d/y">
+            <br>
+        </label>
+        <label>
+            Number of persons*:<br>
+            <input type="text" name="num_of_persons" maxlength="2" id="num_of_persons">
+            <br>
+        </label>
+        What would you want to avail?*:<br>
+        <label>
+            Boarding
+            <input type="checkbox" name="options" value="Boarding">
+            <br>
+        </label>
+        <label>
+            Fooding
+            <input type="checkbox" name="options" value="Fooding">
+            <br>
+        </label>
+        <label>
+            Sight seeing
+            <input type="checkbox" name="options" value="Sight seeing">
+            <br>
+        </label>
+        <label>
+            Discount Coupon code:<br>
+            <input type="text" name="dicount_code" id="dicount_code">
+            <br>
+        </label>
+        Terms and conditions*
+        <table>
+            <tr>
+                <td>
+                    <label>
+                        I agree
+                        <input type="radio" name="radio" value="agree" checked>
+                        <br>
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        I disagree
+                        <input type="radio" name="radio" value="disagree">
+                        <br>
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Complete reservation">
     </form>
 </div>
 </body>
