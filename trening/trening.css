@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    color: wheat;
+}
+
+.paragraph{
+    width: 60%;
+    text-align: justify;
+    font-family: Honk;
+}
+
+h1 {
+    font-family: Angkor;
+}
