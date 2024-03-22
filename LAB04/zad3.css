@@ -1,0 +1,15 @@
+body{
+margin: 0px;
+}
+
+#header{
+    font-family: "Rubik Mono One";
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    background-color: lightgreen;
+    height: auto;
+    box-shadow: gray 5px 5px 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
