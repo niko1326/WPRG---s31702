@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: wheat;
     color: wheat;
 }
 
@@ -11,4 +11,19 @@ body {
 
 h1 {
     font-family: Angkor;
+}
+
+#myshape{
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    background-image: url("kapibara_logo.jpeg");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    box-shadow: gray 5px 5px 5px;
+    border-radius: 50%;
+}
+
+#myshape:hover {
+    float: right;
 }
