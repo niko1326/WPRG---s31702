@@ -8,7 +8,7 @@ body {
     color: #225039;
     text-align: center;
     font-size: 40px;
-    letter-spacing: 10px;
+    letter-spacing: 16px;
     padding: 20px;
 }
 
@@ -26,7 +26,7 @@ body {
 
 .namespace {
     font-family: "Doppio One";
-    font-size: 18px;
+    font-size: 22px;
     background-color: #225039;
     color: white;
     font-weight: bold;
@@ -37,4 +37,39 @@ body {
 .card_content {
     padding: 10px;
     background-color: white;
+}
+
+.ulica{
+    color: #225039;
+    font-family: Arial;
+    text-align: right;
+    z-index: 4;
+    font-size: 18px;
+}
+
+.miasto{
+    margin-top: 8px;
+    z-index: 3;
+    color: #5b5b5b;
+    text-align: right;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.mail{
+    margin-top: 25px;
+    color: #225039;
+    font-family: "Doppio One";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.telefon{
+    margin-top: 12px;
+    color: #5b5b5b;
+    z-index: 1;
+    font-family: Arial;
+    font-size: 16px;
 }
