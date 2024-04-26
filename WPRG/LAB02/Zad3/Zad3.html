@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel reservation form</title>
+</head>
+
+<body>
+<h1>Travel reservation form</h1>
+<h2>* denotes mandotory</h2>
+<div id="main">
+    <form action="" method="GET">
+        <label>
+            Full name*:<br>
+            <input type="text" name="name" placeholder="FirstName LastName">
+            <br>
+        </label>
+        <label>
+            Email address*:<br>
+            <input type="email" name="email" id="form_email">
+            <br>
+        </label>
+        <label>
+            Select Tour Package*:<br>
+            <input type="text" list="tour_package" name="tourPackage">
+            <br>
+        </label>
+        <datalist id="tour_package">
+            <option value="Goa">
+            <option value="Moa">
+            <option value="Boa">
+        </datalist>
+        <label>
+            Arrival date*:<br>
+            <input type="date" name="arrival_date" placeholder="m/d/y">
+            <br>
+        </label>
+        <label>
+            Number of persons*:<br>
+            <input type="text" name="num_of_persons" maxlength="2" id="num_of_persons">
+            <br>
+        </label>
+        What would you want to avail?*:<br>
+        <label>
+            Boarding
+            <input type="checkbox" name="options" value="Boarding">
+            <br>
+        </label>
+        <label>
+            Fooding
+            <input type="checkbox" name="options" value="Fooding">
+            <br>
+        </label>
+        <label>
+            Sight seeing
+            <input type="checkbox" name="options" value="Sight seeing">
+            <br>
+        </label>
+        <label>
+            Discount Coupon code:<br>
+            <input type="text" name="dicount_code" id="dicount_code">
+            <br>
+        </label>
+        Terms and conditions*
+        <table>
+            <tr>
+                <td>
+                    <label>
+                        I agree
+                        <input type="radio" name="radio" value="agree" checked>
+                        <br>
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        I disagree
+                        <input type="radio" name="radio" value="disagree">
+                        <br>
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Complete reservation">
+    </form>
+</div>
+</body>
+
+</html>

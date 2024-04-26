@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<label for="name">Imię: </label>
+<input type="text" id="name" name="name"/><br/>
+
+<label for="ukolor">Ulubiony kolor:</label>
+<input list="kolory" id="ukolor" name="ukolor"/>
+
+<datalist id="kolory">
+    <option value="Czerwony"></option>
+    <option value="Pomarańczowy"></option>
+    <option value="Żółty"></option>
+    <option value="Zielony"></option>
+    <option value="Niebieski"></option>
+    <option value="Granatowy"></option>
+    <option value="Fioletowy"></option>
+    <option value="Różowy"></option>
+    <option value="Biały"></option>
+    <option value="Czarny"></option>
+    <option value="Kapibarowy"></option>
+</datalist>
+<input type="button" value="Zapisz"></input><br/><br/>
+
+<label for="value">Wartość:</label>
+<input type="range" id="value" name="value" min="0" max="10"/><br/>
+<input type="button" value="Wyślij"></input><br/><br/>
+<label for="apostep">Akutalny postęp:</label>
+<progress id="apostep" value="50" max="100"></progress><br/>
+<label for="cpostep">Całkowity postęp:</label>
+<progress id="cpostep" value="75" max="100"></progress><br/>
+<input type="button" value="Wyślij"></input><br/><br/>
+<label for="name">Imię i nazwisko: </label>
+<input type="text" id="name" name="name"/><br/>
+<input type="button" value="Wyślij"></input><br/><br/>
+
+
+</body>
+</html>

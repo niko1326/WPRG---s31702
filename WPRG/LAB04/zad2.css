@@ -1,0 +1,75 @@
+body {
+    background-color: #ececec;
+    margin: 0px;
+}
+
+#header {
+    font-family: "Doppio One";
+    color: #225039;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 16px;
+    padding: 20px;
+}
+
+#themeat {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.contact_card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.namespace {
+    font-family: "Doppio One";
+    font-size: 22px;
+    background-color: #225039;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    letter-spacing: 3px;
+}
+
+.card_content {
+    padding: 10px;
+    background-color: white;
+}
+
+.ulica{
+    color: #225039;
+    font-family: Arial;
+    text-align: right;
+    z-index: 4;
+    font-size: 18px;
+}
+
+.miasto{
+    margin-top: 8px;
+    z-index: 3;
+    color: #5b5b5b;
+    text-align: right;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.mail{
+    margin-top: 25px;
+    color: #225039;
+    font-family: "Doppio One";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.telefon{
+    margin-top: 12px;
+    color: #5b5b5b;
+    z-index: 1;
+    font-family: Arial;
+    font-size: 16px;
+}

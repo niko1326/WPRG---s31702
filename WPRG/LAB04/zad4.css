@@ -1,0 +1,31 @@
+body{
+    text-align: justify;
+}
+
+#green_box1{
+    position: absolute;
+    top: 40px;
+    right: 70%;
+    width: 20%;
+    height: 120px;
+}
+
+#green_box2{
+    position: absolute;
+    top: 400px;
+    right: 50%;
+    width: 10%;
+    height: 300px;
+}
+
+#green_box3{
+    position: fixed;
+    top: 60px;
+    right: 5%;
+    width: 18%;
+    height: 170px;
+}
+
+.boxx{
+    background: green;
+}
