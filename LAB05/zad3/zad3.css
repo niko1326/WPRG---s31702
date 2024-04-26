@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    font-family: Open Sans;
+    width: 100%;
+}
+
+header{
+    position: relative;
+    width: 100%;
+}
+
+#header{
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header_tile{
+    width: 28.33%;
+    color: white;
+    padding: 15px 20px 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.header_tile:hover, #lorem:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#lorem{
+    width: 10%;
+    color: white;
+    padding: 15px 20px 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.not_lorem{
+    text-align: center;
+
+}
+
+#header-dummy{
+    width: 5%;
+    height: 100vh;
+}
+
+#header-background{
+    background-image: url("background.png");
+    background-size: cover;
+    width: 100%;
+    height: 369px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+#upper_text{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#page_contents{
+    background-color: white;
+    width: 65%;
+    margin:0 auto;
+}
+
+.tile_row{
+    display: flex;
+    flex-direction: row;
+}
+
+.tile{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    height: 500px;
+    margin: 35px 0.66% 0.66%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.green_top{
+    height: 50%;
+    width: 100%;
+    background-color: #82866a;
+    text-align: right;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.tile_contents{
+
+}
