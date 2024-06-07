@@ -1,8 +1,8 @@
 #container {
     display: grid;
-    gap: 20px;
-    grid: 40px 40px 40px 40px 40px / 150px 150px 150px 150px 150px;
-    height: 0px;
+    gap: 2.5%;
+    grid: 40px 40px 40px 40px 40px 40px 40px 40px/ 18% 18% 18% 18% 18%;
+    height: 700px;
 }
 
 #container > div {
