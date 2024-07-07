@@ -29,6 +29,9 @@ if ($result->num_rows > 0) {
 }
 mysqli_free_result($result);
 $mysqli->close();
+
 ?>
+
+
 </body>
 </html>

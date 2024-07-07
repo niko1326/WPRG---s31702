@@ -1,0 +1,381 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/*Sidebar styling*/
+.sidebar {
+    background-color: #1e1e1e;
+    padding: 20px;
+    width: 250px;
+    border-right: 1px solid #333;
+    height: 100vh;
+}
+
+.sidebar h2, .sidebar h3 {
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    display: flex; /* Add flexbox layout to list items */
+    justify-content: space-between; /* Space out the child elements */
+    align-items: center; /* Center the items vertically */
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.logout-button{
+    display: block;
+    margin-block-start: 0.4em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    padding: 10px;
+    border: none;
+    background: #7E846B;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login_button{
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    background: #7E846B;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.export-button {
+    display: block;
+    margin-block-start: 0.4em;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    padding: 10px;
+    border: none;
+    background: #7E846B;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.export-button:hover {
+    background-color: #5c604e;
+}
+
+.add_list {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.add_list input[type="text"] {
+    padding: 8px;
+    border: 1px solid #333;
+    border-radius: 5px 0 0 5px;
+    background-color: #333;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+.list-button {
+    padding: 8px 15px;
+    border: none;
+    background: #1e1e1e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#lower{
+    padding: 8px 15px;
+    border: 1px solid #1e1e1e;
+    background: none;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.list-button:hover, #lower:hover {
+    background-color: #7E846B;
+    border: 1px solid #7E846B;
+}
+
+.remove-button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    background: none;
+    color: #d9534f;
+}
+
+.remove-button:hover {
+    color: white;
+    background-color: #d9534f;
+}
+
+/*Main content styling*/
+.main-content {
+    flex: 2;
+    padding: 20px;
+    background-color: #1e1e1e;
+    height: 100vh;
+}
+
+.main-content h1 {
+    margin-top: 0;
+    color: #e0e0e0;
+}
+
+#todo-form {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.form-button{
+    padding: 10px;
+    border: none;
+    background: none;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.form-button:hover{
+    background: #7E846B;
+}
+
+#task {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #333;
+    border-radius: 5px 0 0 5px;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todo-list li {
+    padding: 8px;
+    background: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    -webkit-box-shadow: 0px 0px 10px -4px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 10px -4px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 10px -4px rgba(255, 255, 255, 1);
+}
+
+#todo-list li .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#todo-list li.completed .task-name {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.task-form {
+    margin: 0;
+}
+
+.remove-form {
+    margin-left: auto;
+}
+
+.select-button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.select-button:hover {
+    text-decoration: underline;
+}
+
+/*Custom checkbox*/
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.custom-checkbox input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #919191;
+    border-radius: 4px;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: -5px;
+    width: 10px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(38deg);
+}
+
+.custom-checkbox input:checked + .checkmark {
+    background-color: #7E846B;
+}
+
+.custom-checkbox input:checked + .checkmark:after {
+    display: block;
+    animation: checkmark-animation 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes checkmark-animation {
+    0% {
+        transform: scale(0) rotate(5deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(50deg);
+    }
+    100% {
+        transform: scale(1) rotate(38deg);
+    }
+}
+
+/*Right sidebar*/
+.task-details {
+    flex: 1;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-left: 1px solid #333;
+    color: #e0e0e0;
+    height: 100vh;
+}
+
+.task-details h2 {
+    margin-top: 0;
+    color: #e0e0e0;
+}
+
+.task-details form {
+    margin-top: 20px;
+}
+
+.task-details label {
+    display: block;
+    margin-top: 10px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.task-details input[type="text"],
+.task-details textarea,
+.task-details input[type="date"] {
+    font-family: Arial,sans-serif;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.task-details input[type="color"]{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.task-details button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #7E846B;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-details button:hover {
+    background: #5c604e;
+}
+
+/* Add to your existing style.css */
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+    margin-bottom: 10px;
+}
+

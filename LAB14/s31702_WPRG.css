@@ -1,0 +1,150 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    height: 50px;
+    font-size: 30px;
+    background-color: #262626;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#container {
+    padding-bottom: 100px;
+    min-height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#moviesTable {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#editbutton {
+    background-color: #2e4fff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#editbutton
+{
+    background-color: #00379f;
+}
+
+#editbutton a {
+    color: white;
+    text-decoration: none;
+}
+
+#moviesTable th, #moviesTable td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#moviesTable th {
+    background-color: #262626;
+    color: white;
+}
+
+#moviesTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#moviesTable tbody tr:hover {
+    background-color: #ddd;
+}
+
+#footer {
+    height: 30px;
+    font-size: 12px;
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+#editFormContainer {
+    width: 50%;
+    margin: 20px auto;
+    z-index: 999;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+
+#addFormContainer, #editMovie {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#addFormContainer h1, #editMovie h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+#addFormContainer label, #editMovie label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+#addFormContainer input[type="text"], #editMovie input[type="text"],
+#addFormContainer input[type="number"], #editMovie input[type="number"],
+#addFormContainer input[type="submit"], #editMovie input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#addFormContainer input[type="submit"], #editMovie input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#addFormContainer input[type="submit"]:hover, #editMovie input[type="submmit"]:hover {
+    background-color: #45a049;
+}
+
+#addFormContainer input[type="number"]:focus, #editMovie input[type="number"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
